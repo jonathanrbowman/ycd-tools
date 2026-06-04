@@ -26,16 +26,15 @@ Takes any pak that you suspect contains assets, like `player.pak.yc`, and splits
 # extract_pay.py <input_pak_file> <out_dir>
 python tools/extract_pak.py "path/to/player.pak.yc" ./extracted
 ```
---
+
 #### `tools/anb_to_sheet.py`
-``
 Takes a `.anb` file and decompresses every sprite cell and renders a png with all of them in a grid. Maybe.
 ```bash
 # anb_to_sheet.py <input_anb_file> <out_png_file> --palette <input_pal_file>
 # pass it a .pal.yc file with the --palette arg, otherwise it will use minas colors by default
 python tools/anb_to_sheet.py "path/to/some.anb.yc" Mina_sheet.png --palette ./extracted/player/palettes/player/default.pal.yc
 ```
---
+
 #### `tools/read_palette.py`
 Give it a `.pal` file and it prints the palette's RGBA color table and hex codes for convenience.
 ```bash
